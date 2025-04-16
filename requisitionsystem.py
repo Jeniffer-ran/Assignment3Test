@@ -1,8 +1,4 @@
-"""
-assessment2 part B
-author: Ran Tominaga
 
-"""
 
 class RequisitionSystem():
     requisition_counter = 10000
@@ -15,14 +11,15 @@ class RequisitionSystem():
         self.approval_reference_number = ""
         RequisitionSystem.requisition_counter += 1
         self.requisition = RequisitionSystem.requisition_counter
-        
-    
+
+    # user can input their information such as date, staff Id, staff name.
     def staff_info(self):
         self.date = input("Date (DD/MM/YYYY): ")
         self.staff_id = input("Staff ID: ")
         self.staff_name = input("Staff Name: ")
         return self.date,self.staff_id,self.staff_name,self.requisition
-        
+
+    # set item empty dictionary
     def requisition_detail(self):
         items ={}
         chosen_item = input("what would you like to buy?\n (or 'done' if you want to finish):")
