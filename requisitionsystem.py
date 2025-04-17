@@ -1,5 +1,4 @@
-
-
+# class initialazation.
 class RequisitionSystem():
     requisition_counter = 10000
     def __init__(self,name="",staff_id="",date="",status=""):
