@@ -55,7 +55,7 @@ class RequisitionSystem():
     def requisition_approval(self):
     # Software Design Principle: Separation of concern,  Single Responsibility
     # could be improved by separating decision porocess and putting in the lists approve and pending.
-    #
+    
         if self.total < 500:
             self.status = "Approved"
             approve.append(self.status)
